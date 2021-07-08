@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MaMeLi - Crear producto</title>
+        <link rel="stylesheet" href="/css/shop.css">
+        <link rel="stylesheet" href="/css/login.css">
+        <link rel="stylesheet" href="/css/productForm.css">
+    </head> 
+<body>
+
+    <%- include('../partials/header') %>
+
+    <main id="login-main">
+        <div class="prodFormContainer">
+            <div id="div-icono">
+                <i id="icono" class="fas fa-leaf"></i> 
+            </div>
+            <label id="bienvenida" class="labels-formulario">Nuevo producto</label>
+            <form class="productForm" action="/product/create" method="POST" enctype="multipart/form-data"> 
+                <div  class="ProductFormFirstLine">
+                    <div class="prodFormName">
+                        <label class="prodFormLabel" for="">Nombre</label>
+                        <input class="prodFormInput" type="text" name="name">
+                    </div>
+                    <div class="prodFormCategory">
+                        <label class="prodFormLabel" for="">Categoría</label>
+                        <select name="category" id="category">
+                            <option value="">Seleccione categoría</option>
+                            <option value="pots">Pots</option>
+                            <option value="bigPots">Big Pots</option>
+                            <option value="stands">Plant Stands</option>
+                            <option value="plantas">Plantas</option>
+                            <option value="terrarios">Terrarios</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="ProductFormSecondLine">
+                    <div class="prodFormPrice">
+                        <label class="prodFormLabel" for="">Precio</label>
+                        <input class="prodFormInput" type="text" name="price">
+                    </div>
+                </div>
+
+                <div class="productFormThirdLine">
+                    <div class="productFormThirdLineEl">
+                        <label class="prodFormLabel" for="">Efectivo</label>
+                        <input class="prodFormInput" type="radio" name="PayWay">
+                        <label class="prodFormLabel" for="">Tarjeta</label>
+                        <input class="prodFormInput" type="radio" name="PayWay">
+                    </div>
+                    <div class="productFormThirdLineEl"> 
+                        <label class="prodFormLabel" for="">Cuotas</label>
+                        <select name="cuotas" id="cuotas">
+                            <option value="">Cuotas</option>
+                            <option value="3">3</option>
+                            <option value="6">6</option>
+                            <option value="9">9</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <div class="productFormThirdLineEl">
+                        <label class="prodFormLabelInterest" for="">Interés(%)</label>
+                        <input class="prodFormInputInterest" type="number" min="0" max="100" name="interest">
+                    </div>
+                </div>
+                
+                <div class="textArea-description">
+                    <!-- <label class="prodFormLabel" for="">Descripción</label> -->
+                    <label style="margin:auto" class="prodFormLabel" for="">Descripción</label>
+                    <textarea class="prodFormInputInterest" name="description" id="" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="new-product-button-add-image-div-container">   
+                    <label class="new-product-button-add-image-name">Agregar imágenes</label>
+                    <input type="file" name="productImage" accept=".jpg" class="new-product-button-add-image-input">
+                </div>
+                
+                <div class="productFormFourthLine">
+                    <button class="prodFormButton">Vista previa</button>
+                    <button class="prodFormButton" type="submit">Confirmar</button>
+                </div>
+            </form> 
+        </div>   
+    </main>
+   
+    <%- include('../partials/footer') %>
+    <script src="https://kit.fontawesome.com/17464b966e.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

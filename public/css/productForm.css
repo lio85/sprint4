@@ -1,0 +1,245 @@
+.prodFormLabel {
+    width: 25%;
+    display: block;
+}
+
+.prodFormInput {
+    width: 25%;
+}
+
+.prodFormContainer {
+    width: 90%;
+    max-width: 580px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: solid 1px rgb(43, 35, 35);
+    border-radius: 10px;
+}
+
+.productForm {
+    height: 400px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+
+
+.ProductFormFirstLine {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.prodFormName {
+    width: 40%;
+    text-align: center;
+
+}
+.prodFormCategory {
+    width: 40%;
+    text-align: center;
+
+}
+
+.prodFormName label,
+.prodFormName input {
+    width: 100%;
+}
+
+.prodFormCategory label,
+.prodFormCategory select {
+    width: 100%;
+}
+
+.ProductFormSecondLine {
+   margin-bottom: 15px;
+}
+
+.prodFormPrice {
+    width: 40%;
+    margin: auto;
+}
+
+.prodFormPrice label,
+.prodFormPrice input {
+    width: 100%;
+    text-align: center;
+}
+
+.productFormThirdLine {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.productFormThirdLineEl {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productFormThirdLineEl select,
+.prodFormInputInterest {
+    width: 35%;
+}
+
+/* estilo original de agregar imagenes */
+.prodFormButton{
+    background-color: #f0e8db;
+    width: 30%;
+    margin:auto;
+    display: block;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border: solid 1px rgb(43, 35, 35);
+}
+
+/* vista crear producto/ boton para subir imagenes (from line 100 to 130)*/
+/* div contenedor */
+.new-product-button-add-image-div-container {
+    background-color: #f0e8db;
+    width: 30%;
+    margin:auto;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border: solid 1px rgb(43, 35, 35);
+    position: relative;
+}
+/*label*/
+.new-product-button-add-image-name {
+    display: block;
+    text-align: center;
+}
+/*input*/
+.new-product-button-add-image-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+/* vista crear producto/ boton para subir imagenes (from line 100 to 130)*/
+
+.productFormFourthLine {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* ultimos estilos: Domingo 4/7/21 18:54 hs.*/
+
+/* le aumente el height a la clase del form para que entren los nuevos tags */
+.productForm {
+    height: 550px;
+}
+
+/* select de cuotas: lo agrande para que se lea bien la palabra 'cuotas' */
+#cuotas{  
+  width: 40%; 
+}
+
+/* estilos del text area para la descripcion del producto */
+/* div contenedor */
+.textArea-description{
+    text-align: center;
+}
+
+/* label: "Descripción"*/
+.prodFormLabel{
+    width: 25%;
+    display: block;
+}
+
+/* text area  */
+.productFormThirdLineEl select,
+.prodFormInputInterest {
+    width: 35%;
+}
+/* estilos del text area pra la descripcion de producto: */
+
+/* ultimos estilos: */
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* estilos para la vista productList */
+
+/* main */
+/*.productList-main{
+
+}*/
+
+/* div contenedor (principal) */
+.products-list-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* h1: Listado de prosuctos */
+.productsListTitle{
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* div contenedor de producto (dentro del for) */
+.product-container{
+    text-align: center;
+    width: 25%;
+    height: 200px;
+    padding-bottom: 50px;
+}
+
+/* anchor dentro del for (redirige al detalle de un producto en particular) */
+.productList-anchor{
+    width: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+/* estilo sobre la imagen del detalle de producto */
+.product-container img{
+    width: 90%;
+    height: 90%;
+    margin-top: 10px;
+}
+
+/* anchor del final del main (invita a crear un nuevo producto) */
+.newProduct-anchor{
+    padding: 10px 0 30px 0;
+    display: block;
+    width: 19%;
+    margin: auto;
+    text-align: center;
+    font-size: 20px ;
+}
+
+/* estilos para la vista productList */
+
+
+
+
+
+                
+               
+                          
+                                    
+                        
+        
+
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrito</title>
+    
+        <link rel="stylesheet" href="./css/shop.css">
+    </head>
+    <body>
+
+        <%- include('./partials/header') %>
+
+        <main id="main-carrito">
+
+            <div id="productos-seleccionados">
+
+            <!-- 1er. producto -->
+                <div class="producto-seleccionado">
+                    <label class="nombre-producto-seleccionado"><strong>Seleccionaste:</strong> Maceta Terracota Bemba</label>
+                    <span class="contenedor-imagen-producto-seleccionado">
+                        <img class="imagen-producto-seleccionado" src="./imagenes/maceta-terracota-bemba.jpg" alt="maceta-terracota-bemba">
+                    </span>
+                    <div class="detalle-compra-padre"> 
+                        <div class="detalle-compra-hijo">
+                            <label>Precio unitario:</label>
+                            <label class="precio-producto-seleccionado">$2500</label>                
+                        </div>
+                    </div>
+                    <div class="detalle-compra-padre"> 
+                        <div class="detalle-compra-hijo">
+                            <label>Cantidad:</label>
+                            <input class="cantidad-producto-seleccionado" type="number" value="1">
+                            <label class="importe-total-producto-seleccionado">$2500</label>   
+
+                        </div>
+                    </div>
+                    <div class="detalle-compra-padre"> 
+                        <div class="detalle-compra-hijo-2">
+                            <i class="fas fa-trash-alt descartar-compra"></i>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-separador"></div>
+
+                <!-- 2do. producto -->
+
+                <div class="producto-seleccionado">
+                    <label class="nombre-producto-seleccionado"><strong>Seleccionaste:</strong> Stand de madera G alto con maceta de terracota</label>
+                    <span class="contenedor-imagen-producto-seleccionado">
+                        <img class="imagen-producto-seleccionado" src="./imagenes/stand-madera-G-alto-con-maceta-de-terracota.jpg" alt="maceta-terracota-bemba">               
+                    </span>
+                    <div class="detalle-compra-padre"> 
+                        <div class="detalle-compra-hijo">
+                            <label>Precio unitario:</label>
+                            <label class="precio-producto-seleccionado">$2850</label>                
+                        </div>
+                    </div>
+                    <div class="detalle-compra-padre"> 
+                        <div class="detalle-compra-hijo">
+                            <label>Cantidad:</label>
+                            <input class="cantidad-producto-seleccionado" type="number" value="1">
+                            <label class="importe-total-producto-seleccionado">$2850</label>   
+                        </div>
+                    </div>
+                    <div class="detalle-compra-padre"> 
+                        <div class="detalle-compra-hijo-2">
+                            <i class="fas fa-trash-alt descartar-compra"></i>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-separador"></div>
+                <div class="main-separador2"></div>
+
+                <!-- 3er. producto -->
+
+                <div class="producto-seleccionado">
+                    <label class="nombre-producto-seleccionado"><strong>Seleccionaste:</strong> Maceta Adoquín</label>
+                    <span class="contenedor-imagen-producto-seleccionado">
+                        <img class="imagen-producto-seleccionado" src="./imagenes/maceta-adoquin.jpg" alt="Maceta adoquin">
+                    </span>
+                    <div class="detalle-compra-padre"> 
+                        <div class="detalle-compra-hijo">
+                            <label>Precio unitario:</label>
+                            <label class="precio-producto-seleccionado">$3400</label>                
+                        </div>
+                    </div>
+                    <div class="detalle-compra-padre"> 
+                        <div class="detalle-compra-hijo">
+                            <label>Cantidad:</label>
+                            <input class="cantidad-producto-seleccionado" type="number" value="1">
+                            <label class="importe-total-producto-seleccionado">$3400</label>   
+
+                        </div>
+                    </div>
+                    <div class="detalle-compra-padre"> 
+                        <div class="detalle-compra-hijo-2">
+                            <i class="fas fa-trash-alt descartar-compra"></i>  
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="main-separador"></div>
+            <div class="main-separador2"></div>
+            <div class="main-separador3"></div>
+
+            <div class="total-compra">
+                <label id="texto-importe-total">El total de tu compra es de</label>
+                <label id="importe-total">$8750</label>
+            </div>
+
+            <div class="main-buttons">
+                <button id="cancel-button">Cancelar</button>
+                <button id="more-products-button">Ver más</button>        
+                <button id="confirm-button">Confirmar</button>
+            </div>
+
+            <div id="main-linea-final"></div>            
+        </main>
+
+        <%- include('./partials/footer') %>
+
+        <script src="https://kit.fontawesome.com/17464b966e.js" crossorigin="anonymous"></script>
+
+    </body>
+</html>

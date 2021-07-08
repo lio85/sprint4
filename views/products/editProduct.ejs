@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MaMeLi - Editar producto</title>
+        <link rel="stylesheet" href="/css/shop.css">
+        <link rel="stylesheet" href="/css/login.css">
+        <link rel="stylesheet" href="/css/productForm.css">
+    </head>   
+<body>
+
+    <%- include('../partials/header') %>
+
+    <main id="login-main">
+        <div class="prodFormContainer">
+            <div id="div-icono">
+                <i id="icono" class="fas fa-leaf"></i> 
+            </div>
+            <label id="bienvenida" class="labels-formulario">Editar producto</label>
+            <form class="productForm" action="/product/<%=product.id%>?DIGITAL=PUT" method="POST" enctype="multipart/form-data"> 
+                <div  class="ProductFormFirstLine">
+                    <div class="prodFormName">
+                        <label class="prodFormLabel" for="">Nombre</label>
+                        <input class="prodFormInput" type="text" name="name" value="<%=product.name%>">
+                    </div>
+                    <div class="prodFormCategory">
+                        <label class="prodFormLabel" for="">Categoría</label>
+                        <select name="category" id="category">
+                            <option value="">Seleccione categoría</option>
+                            <option value="pots" <%=product.category=='pots'?'selected':''%> >Pots</option>
+                            <option value="bigPots" <%=product.category=='bigPots'?'selected':''%>>Big Pots</option>
+                            <option value="plantStands" <%=product.category=='stands'?'selected':''%>>Plant Stands</option>
+                            <option value="plantas" <%=product.category=='plantas'?'selected':''%>>Plantas</option>
+                            <option value="terrarios" <%=product.category=='terrarios'?'selected':''%>>Terrarios</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="ProductFormSecondLine">
+                    <div class="prodFormPrice">
+                        <label class="prodFormLabel" for="">Precio</label>
+                        <input class="prodFormInput" type="text" name="price" value="<%=product.price%>">
+                    </div>
+                </div>
+
+                <div class="productFormThirdLine">
+                    <div class="productFormThirdLineEl">
+                        <label class="prodFormLabel" for="">Efectivo</label>
+                        <input class="prodFormInput" type="radio" name="PayWay">
+                        <label class="prodFormLabel" for="">Tarjeta</label>
+                        <input class="prodFormInput" type="radio" name="PayWay">
+                    </div>
+                    <div class="productFormThirdLineEl"> 
+                        <label class="prodFormLabel" for="">Cuotas</label>
+                        <select name="cuotas" id="cuotas">
+                            <option value="">Cuotas</option>
+                            <option value="3" <%=product.cuotas=='3'?'selected':''%>>3</option>
+                            <option value="6" <%=product.cuotas=='6'?'selected':''%>>6</option>
+                            <option value="9" <%=product.cuotas=='9'?'selected':''%>>9</option>
+                            <option value="12" <%=product.cuotas=='12'?'selected':''%>>12</option>
+                        </select>
+                    </div>
+                    <div class="productFormThirdLineEl">
+                        <label class="prodFormLabelInterest" for="">Interés(%)</label>
+                        <input class="prodFormInputInterest" type="number" min="0" max="100" name="interest" value="<%=product.name%>">
+                    </div>
+                </div>
+                
+                <div class="textArea-description">
+                    <!-- <label class="prodFormLabel" for="">Descripción</label> -->
+                    <label style="margin:auto" class="prodFormLabel" for="">Descripción</label>
+                    <textarea class="prodFormInputInterest" name="description" id="" cols="30" rows="10" value="<%=product.description%>"><%=product.description%></textarea>
+                </div>
+
+                <div style="text-align: center; margin-top: 20px;">
+                    <%if(product.productImage!=''){%> 
+                        <label for="">Borrar imagen actual</label>
+                        <input type="checkbox" name="deleteImage">
+                    <%}%> 
+                </div>
+
+                <div class="new-product-button-add-image-div-container">   
+                    <label class="new-product-button-add-image-name">Agregar imágenes</label>
+                    <input type="file" name="productImage" accept=".jpg" class="new-product-button-add-image-input">
+                </div>
+                
+                <div class="productFormFourthLine">
+                    <button class="prodFormButton" type="submit">Confirmar</button>
+                </div>
+            </form> 
+            <form action="/product/<%=product.id%>?_method=DELETE" method="POST"" onsubmit="return confirm('Está seguro que desea eliminar <%=product.name%>?')">
+                <button type="submit" class="prodFormButton">Eliminar</button>
+            </form>
+        </div>   
+    </main>
+   
+    <%- include('../partials/footer') %>
+
+    <script src="https://kit.fontawesome.com/17464b966e.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

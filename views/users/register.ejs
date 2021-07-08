@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign in - MaMeLi</title>
+        <link rel="stylesheet" href="/css/signup.css">
+    </head>
+    <body>
+        <%- include('../partials/header') %>
+        <main id="main">
+            <div id="contenedor-general">
+                <div id="div-icono">
+                    <i id="icono" class="fas fa-user"></i>
+                </div>
+                <label id="bienvenida" class="labels-formulario">Registrate</label>
+                <form action="#" method="POST">
+                    <div class="div">
+                        <label id="label-usuario" class="labels-formulario">Nombre</label>
+                        <input type="text" name="user" id="input-usuario" > 
+                    </div>
+                    <div class="div">
+                        <label id="label-usuario" class="labels-formulario">Apellido</label>
+                        <input type="text" name="user" id="input-usuario" > 
+                    </div>
+                    <div class="div">
+                        <label id="label-usuario" class="labels-formulario">e-mail</label>
+                        <input type="email" name="user" id="input-usuario" > 
+                    </div>
+                    <div class="div">
+                        <label id="contraseña" class="labels-formulario">Contraseña</label>
+                        <input type="password" name="password" id="password" >
+                    </div>
+                    <div class="div">
+                        <label id="contraseña" class="labels-formulario">Confirmar contraseña</label>
+                        <input type="password" name="password" id="password" >
+                    </div>
+                    <button id="ingresar" type="submit">Ingresar</button>
+                    <button id="restablecer" type="submit">¿Reestablecer contraseña?</button>
+                </form> 
+            </div>
+        </main>
+        <%- include('../partials/footer') %>
+        <script src="https://kit.fontawesome.com/17464b966e.js" crossorigin="anonymous"></script>
+    </body>
+</html>

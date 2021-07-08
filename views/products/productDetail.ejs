@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "width = device-width , initial-scale = 1">
+        <link href = '/css/detailStyle.css' rel="stylesheet">
+        <script src="https://kit.fontawesome.com/77ea5851fe.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <%- include('../partials/header') %>
+
+        <main>
+            <h1 id='titulo'><%=objectFound.name%></h1>
+            <div>
+                
+                <%if(objectFound.productImage){%>
+                    <img src="/imagenes/productImages/<%=objectFound.productImage%>"> 
+                <%} else{%>
+                    <img src="/imagenes/logo.JPG">
+                <%}%>   
+
+                <br>
+                <div id="det">
+                    <br>  
+                    <div id='precio'>$<%=objectFound.price%></div>
+                    <br id='espacioCuota'>
+                    <div id='cuotas'> 6 cuotas sin interes de $<%=cuotas%></div>
+                    <br id='espacioCuota'>
+                    <div> 
+                        <br>
+                        <input type="radio" value="mini" name='tamaño'> Mini </input>
+                        <br>
+                        <input type="radio" value="medio" name='tamaño'> Medio </input>
+                        <br>
+                        <input type="radio" value="grande" name='tamaño'> Grande </input>
+                    </div>
+                </div>
+                <div id="fav">
+                    <button type="submit"> <i class="fas fa-shopping-cart"></i> </button>
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class='descrip'>
+                    <p><%=objectFound.description%></p>
+                    <img src="/imagenes/medidasDetailProd.jpg" id='medida'>
+                    <p class="nota"> La imagen es solo a modo ilustrativo. Cada planta es única. Además, las plantas, al tratarse de seres vivos que requieren de nuestro cuidado, una vez adquiridas no tendrán cambio o devolución!
+                    </p>
+                </div>
+            </div>    
+                <div> Productos relacionados</div>
+                <div id="prodrelac">
+                    <span class="prod">
+                        <img src="/imagenes/otrosProd1.jpg" class='relacionados'>
+                        <h2 class= 'titRelacionado'>
+                            Maceta Singer
+                        </h2>
+                        <h2 class="precioRelac">
+                            $2.500
+                        </h2>
+                        <h2 class='cuotasSn'> <i class="far fa-credit-card"></i>
+                            6 cuotas s/i $416.67
+                        </h2>
+                    </span>
+                    <span class="prod">
+                        <img src="/imagenes/otrosProd2.jpg" class='relacionados'>
+                        <h2 class= 'titRelacionado'>
+                            Maceta Llama Chica
+                        </h2>
+                        <h2 class="precioRelac">
+                            $700
+                        </h2>
+                        <h2 class='cuotasSn'> <i class="far fa-credit-card"></i>
+                            6 cuotas s/i $116.67
+                        </h2>
+                    </span>
+                    <span class="prod">
+                        <img src="/imagenes/otrosProd3.jpg" class='relacionados'>
+                        <h2 class= 'titRelacionado'>
+                            Maceta Balloon
+                        </h2>
+                        <h2 class="precioRelac">
+                        $3.200
+                        </h2>
+                        <h2 class='cuotasSn'> <i class="far fa-credit-card"></i>
+                        6 cuotas s/i $533.33
+                        </h2>
+                    </span>
+                    <span class="prod">
+                        <img src="/imagenes/otrosProd4.jpg" class='relacionados'>
+                        <h2 class= 'titRelacionado'>
+                            Maceta Prisma
+                        </h2>
+                        <h2 class="precioRelac">
+                            $3.500
+                        </h2>
+                        <h2 class='cuotasSn'> <i class="far fa-credit-card"></i>
+                            6 cuotas s/i $553.33
+                        </h2>
+                    </span>
+                </div>
+
+                <a class="editProductLink" href="/product/<%=objectFound.id%>/edit">Editar producto</a>
+
+        </main>
+        <%- include('../partials/footer') %>
+        <script src="https://kit.fontawesome.com/17464b966e.js" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
+

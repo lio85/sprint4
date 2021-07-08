@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="gallery-grid.css">
+    <link rel="stylesheet" href="css/indexstylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+<body>
+
+<%- include('./partials/header') %>
+</div>
+<main>
+    <div class= "carrousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="imgCarrousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="imgCarrousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="imgCarrousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/imagenes/carro1.png" class="d-block w-100" alt="..." width="100px" height="350px">
+              </div>
+              <div class="carousel-item">
+                <img src="/imagenes/carro2.jpg" class="d-block w-100" alt="..." width="100px" height="350px">
+              </div>
+              <div class="carousel-item">
+                <img src="/imagenes/carro3.png" class="d-block w-100" alt="..." width="100px" height="350px">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </div>
+    <div class= "subtitulo">
+      <h3>Nuestros productos más vendidos... </h3>
+    </div>
+
+    <div class="productosSugeridos">
+        <div class="card productoSugerido text-center" style="width: 18rem;">
+            <img src="/imagenes/macetaBetty.jpg" class="card-img-top img-thumbnail" alt="macetaBetty">
+            <div class="card-body">
+              <h5 class="card-title">Maceta Betty</h5>
+              <p class="card-text">Maceta de cerámica veteada, con un tamaño ideal para darle un toque verde a un estante, mesa ratona o escritorio.</p>
+              <a href="#" class="btn btn-outline-info">Ver más</a>
+            </div>
+          </div>
+          <div class="card productoSugerido text-center" style="width: 18rem;">
+            <img src="/imagenes/monstera.jpg" class="card-img-top img-thumbnail" alt="monstera">
+            <div class="card-body">
+              <h5 class="card-title">Monstera</h5>
+              <p class="card-text">Si tenés un espacio bien iluminado de manera indirecta, la Monstera es para vos! Le gusta mucho la humedad ambiental.</p>
+              <a href="#" class="btn btn-outline-info">Ver más</a>
+            </div>
+          </div>
+          <div class="card productoSugerido text-center" style="width: 18rem;">
+            <img src="imagenes/standMadera.jpg" class="card-img-top img-thumbnail" alt="standMadera">
+            <div class="card-body">
+              <h5 class="card-title">Stand de Madera</h5>
+              <p class="card-text">Maceta de plastico premium de 27 cm de diametro y pie de eucalipto hidrolaqueado para decorar cualquier espacio.</p>
+              <a href="#" class="btn btn-outline-info">Ver más</a>
+            </div>
+          </div>
+          <div class="card productoSugerido text-center" style="width: 18rem;">
+              <img src="imagenes/combomacetas.jpg" class="card-img-top img-thumbnail" alt="combomacetas">
+              <div class="card-body">
+                <h5 class="card-title">Combo Macetas</h5>
+                <p class="card-text">La colección más cool de terracota completa. Lleváte a Bemba, Singer y Zen y armá tu rincón botánico.</p>
+                <a href="#" class="btn btn-outline-info">Ver más</a>
+              </div>  
+          </div>  
+
+    </div>
+    
+   
+    <div class="container gallery-container">
+      <h2 class="subtitulo">Categorias de Productos</h2>  
+      <div class="tz-gallery">
+  
+          <div class="row">
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="../imagenes/combos.jpeg">
+                      <img src="../imagenes/combos.jpeg" alt="combos">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="../imagenes/macetas.jpeg">
+                      <img src="../imagenes/macetas.jpeg" alt="macetas">
+                  </a>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                  <a class="lightbox" href="../imagenes/plantas.jpg">
+                      <img src="../imagenes/plantas.jpg" alt="plantas">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="../imagenes/terrarios.jpeg">
+                      <img src="../imagenes/terrarios.jpeg" alt="terrarios">
+                  </a>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                  <a class="lightbox" href="../imagenes/standMadera.jpg">
+                      <img src="../imagenes/standMadera.jpg" alt="accesorios">
+                  </a>
+              </div>
+              
+          </div>
+  
+      </div>
+  
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+  <script>
+      baguetteBox.run('.tz-gallery');
+  </script>
+    <!-- <div class= "menuImagenes">
+        <div class="combos">
+            <img src="https://i.pinimg.com/236x/65/f9/ca/65f9ca515e9e5f4668df22d53b5bb7fb.jpg" class="imgCombos rounded-circle" alt="combos">
+        </div>
+        <div class="trio">
+            <div class="macetas">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5MnbqtCSKJXsSufu08QgT7hWnYS2AOAc_lg&usqp=CAU" class="imgMaceta rounded-circle" alt="macetas">
+
+            </div>
+        <div class="interiorExterior">
+            <div class="interior">
+                <img src="https://i.pinimg.com/236x/45/96/b8/4596b8a7a7096a8401e15e9b0fd4ef6c.jpg" class="imgInterior rounded-circle" alt="interior">
+
+            </div>
+            <div class="exterior">
+                <img src="https://i.pinimg.com/236x/52/c6/16/52c616c858e2af4f53cdb9eca884e275.jpg" class="imgExterior rounded-circle" alt="exterior">
+
+            </div>
+        </div>
+        </div>
+        <div class="terrarios">
+            <img src="https://i.pinimg.com/236x/62/d1/13/62d113f614ee0eb7d936e549f6021d12.jpg" class="imgTerarrio rounded-circle" alt="terrarios">
+
+        </div>
+
+    </div> -->
+</main>
+
+<%- include('./partials/footer') %>
+<script src="https://kit.fontawesome.com/17464b966e.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

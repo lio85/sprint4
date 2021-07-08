@@ -1,0 +1,25 @@
+{
+  "name": "proyecto-integrador",
+  "version": "1.0.0",
+  "description": "E-Commerce para tienda vivero MAMELI (venta de plantas, macetas e insumos para jardineria) ubicada en Ciudad Autónoma de Buenos Aires, Argentina. Público objetivo: Para publico general focalizando en un rango de edad de 20 a 50",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MargaritaSyd/Proyecto-Integrador.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MargaritaSyd/Proyecto-Integrador/issues"
+  },
+  "homepage": "https://github.com/MargaritaSyd/Proyecto-Integrador#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "multer": "^1.4.2"
+  }
+}

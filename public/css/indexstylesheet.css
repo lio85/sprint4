@@ -1,0 +1,145 @@
+*{
+    font-family: monospace;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #f3f3f3;
+    border-bottom: solid 1px rgba(54, 46, 46, 0.534);
+    display: flex;
+    align-items: center;     
+    width: 100vw; 
+}
+main {
+    width: 95vw; 
+    margin: auto;
+}
+.left-menu{
+    display: inline-block;
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 5px;
+    width: 23.5%;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.cont-logo{
+    display: inline-block;
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 5px;
+    width: 50%;
+}
+
+.logo{ 
+    width: 90px;
+    height: 75px;
+}
+
+.right-menu{
+    display: inline-block;
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 5px;
+    width: 23.5%;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-right: 7%;
+}
+
+.iconos{
+    color: rgb(68, 196, 132);
+}
+.carrousel{
+    display:flex;
+    width:100%;
+    heigth: auto;
+    justify-content:center;
+    
+}
+.imgcarrousel{
+    width:100%;
+    heigth:auto;
+}
+.subtitulo{
+    color:rgb(68, 196, 132);
+    text-align:left;
+}
+.productosSugeridos{
+    background-color:#FBEFFB;
+    display:flex;
+    justify-content: space-around;
+}
+.card{
+    box-shadow: black;
+}
+.card-title{
+    color:rgb(68, 196, 132)
+}
+.btn-primary{
+    color:rgb(68, 196, 132);
+}
+.menuImagenes{
+    display:flex;
+    justify-content: center;
+    width:95vw;
+
+}
+
+.interiorExterior{
+    display:flex;
+}
+
+
+footer {
+    background-color: rgba(54, 46, 46, 0.534);
+    border-top: 1px solid rgb(43, 35, 35);
+    font-size: 12px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img {
+    width: 72px;
+    height: 60px;
+    margin-right: 5px;
+    border: 1px solid rgb(43, 35, 35);
+    border-radius: 100%;
+
+}
+
+footer label {
+    display: block;
+}
+
+
+.contacto {
+    text-align: center;
+    font-weight: bold;   
+}
+
+.redes {
+    text-align: center;
+}
+
+.footer-titulos {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-items {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+@media (max-width:361px){
+    .productosSugeridos{
+        display:block
+    }
+
+}

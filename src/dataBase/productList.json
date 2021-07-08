@@ -1,0 +1,86 @@
+[
+    {
+     "id": 1,
+     "name": "Macetas imantadas mini",
+     "category": "",
+     "price": "650",
+     "payWay": "on",
+     "cuotas": "",
+     "interest": "",
+     "description": "Las mas lindas mini macetas con iman. Realizadas en ceramica y esmaltadas a color. EL PRECIO ES POR UNIDAD\r\n",
+     "productImage": "1625431924591.jpg",
+     "inStock": true
+    },
+    {
+     "id": 2,
+     "name": "Maceta Aduki",
+     "category": "",
+     "price": "1200",
+     "payWay": "on",
+     "cuotas": "",
+     "interest": "",
+     "description": "Maceta de cerámica veteada, con un tamaño ideal para darle un toque verde a un estante, mesa ratona o escritorio. Queda muy bien con una suculenta o una fitonia.\r\n",
+     "productImage": "1625432023445.jpg",
+     "inStock": true
+    },
+    {
+     "id": 3,
+     "name": "Bemba contenta",
+     "category": "",
+     "price": "2200",
+     "payWay": "on",
+     "cuotas": "",
+     "interest": "",
+     "description": "Maceta de terracota divertidísima. Ideal para ponerle una planta de pelo y otras en la boca.\r\n",
+     "productImage": "1625432088328.jpg",
+     "inStock": true
+    },
+    {
+     "id": 4,
+     "name": "Aphelandra",
+     "category": "",
+     "price": "1000",
+     "payWay": "on",
+     "cuotas": "",
+     "interest": "",
+     "description": "La imagen es solo a modo ilustrativo. Cada planta es única. Además, las plantas, al tratarse de seres vivos que requieren de nuestro cuidado, una vez adquiridas no tendrán cambio o devolución.\r\n",
+     "productImage": "1625432133626.jpg",
+     "inStock": true
+    },
+    {
+     "id": 5,
+     "name": "Tetris",
+     "category": "",
+     "price": "1200",
+     "payWay": "on",
+     "cuotas": "",
+     "interest": "",
+     "description": "Maceta de cerámica cilíndrica, texturada y esmaltada en colores lisos. Es simple y divina.\r\n",
+     "productImage": "1625432189213.jpg",
+     "inStock": true
+    },
+    {
+     "id": 6,
+     "name": "Macetero Cruz",
+     "category": "",
+     "price": "2500",
+     "payWay": "on",
+     "cuotas": "",
+     "interest": "",
+     "description": "Macetero de hierro y aluminio hecho a mano y pintado a horno. Una opcion con altura ideal para decorar tu casa.\r\n",
+     "productImage": "1625432238296.jpg",
+     "inStock": true
+    },
+    {
+     "id": 7,
+     "name": "Pie Kan Blanco",
+     "category": "",
+     "price": "2650",
+     "payWay": "on",
+     "cuotas": "",
+     "interest": "",
+     "description": "Pie de hierro hecho especial y unicamente para la maceta KAN.\r\n",
+     "productImage": "1625432280949.jpg",
+     "inStock": true
+    }
+   ]
